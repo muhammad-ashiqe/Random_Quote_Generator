@@ -25,7 +25,7 @@ const QuoteWindow = () => {
 
   return (
     <div className="quote-container">
-      <p className="quote-text">{quote.quote}</p>
+      <p className="quote-text">❝ {quote.quote} ❞</p>
       <p className="quote-author">- {quote.author}</p>
       <button className="generate-button" onClick={() => generateRandom()}>
         Generate Another Quote
