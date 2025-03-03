@@ -1,11 +1,10 @@
-/* General Reset */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body Styling */
 body {
   font-family: 'Montserrat', sans-serif;
   background: #1a1a1a;
@@ -17,9 +16,8 @@ body {
   padding: 20px;
 }
 
-/* Quote Container */
 .quote-container {
-  background:  rgba(84, 20, 1, 0.3);
+  background: rgba(84, 20, 1, 0.3);
   border-radius: 20px;
   padding: 2.5rem;
   max-width: 700px;
@@ -31,7 +29,6 @@ body {
   overflow: hidden;
 }
 
-/* Quote Text */
 .quote-text {
   font-size: 1.8rem;
   font-weight: 400;
@@ -44,7 +41,6 @@ body {
   animation: slideIn 0.8s ease-in-out;
 }
 
-/* Quote Author */
 .quote-author {
   font-size: 1.2rem;
   font-style: italic;
@@ -55,7 +51,20 @@ body {
   animation: slideIn 1s ease-in-out;
 }
 
-/* Generate Button */
+
+.author-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 1.5rem auto;
+  border: 4px solid #ff5722;
+  box-shadow: 0 8px 20px rgba(255, 87, 34, 0.4);
+  animation: fadeIn 1.2s ease-in-out;
+  display: block; 
+}
+
+
 .generate-button {
   background: #ff5722;
   color: #fff;
@@ -82,7 +91,6 @@ body {
   box-shadow: 0 4px 15px rgba(255, 87, 34, 0.4);
 }
 
-/* Animations */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -126,6 +134,11 @@ body {
     font-size: 1.1rem;
   }
 
+  .author-image {
+    width: 100px;
+    height: 100px;
+  }
+
   .generate-button {
     padding: 0.8rem 2rem;
     font-size: 0.9rem;
@@ -136,13 +149,18 @@ body {
   .quote-container {
     padding: 1.5rem;
   }
-
+  
   .quote-text {
     font-size: 1.3rem;
   }
 
   .quote-author {
     font-size: 1rem;
+  }
+
+  .author-image {
+    width: 80px;
+    height: 80px;
   }
 
   .generate-button {
